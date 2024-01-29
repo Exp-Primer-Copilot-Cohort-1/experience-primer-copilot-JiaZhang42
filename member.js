@@ -3,4 +3,6 @@ function skillMember() {
     var memberValue = member.options[member.selectedIndex].value;
     var memberText = member.options[member.selectedIndex].text;
     var memberList = document.getElementById('memberList');
-    var memberListValue = memberList.options[memberLi
+    var memberListValue = memberList.options[memberList.selectedIndex].value;
+    var memberListText = memberList.options[memberList.selectedIndex].text;
+}
