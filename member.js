@@ -1,8 +1,29 @@
 function skillMember() {
-    var member = document.getElementById('member');
-    var memberValue = member.options[member.selectedIndex].value;
-    var memberText = member.options[member.selectedIndex].text;
-    var memberList = document.getElementById('memberList');
-    var memberListValue = memberList.options[memberList.selectedIndex].value;
-    var memberListText = memberList.options[memberList.selectedIndex].text;
+    return {
+        name: 'skillMember',
+        type: 'member',
+        description: 'A member of the skill',
+        fields: {
+            id: {
+                type: 'ID',
+                description: 'The id of the skill member'
+            },
+            name: {
+                type: 'String',
+                description: 'The name of the skill member'
+            },
+            avatar: {
+                type: 'String',
+                description: 'The avatar of the skill member'
+            },
+            description: {
+                type: 'String',
+                description: 'The description of the skill member'
+            },
+            skill: {
+                type: 'skill',
+                description: 'The skill of the skill member'
+            }
+        }
+    }
 }
